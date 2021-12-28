@@ -1,0 +1,29 @@
+topic: ~Marvel()
+language: enu
+
+concept: (greetings)["How are you?" "How are you doing?" "What's up?"]
+concept: (Afeeling)["I'm doing good." "I'm good." "Fine." "Great." "Fantastic." "I'm fine."]
+concept: (MarvalC)["who's" "what's" your favorit?]
+concept: (FeelingBad) ["not good" "bad" "not sure" "I'm sad"]
+concept: (name)["what's your name?" "tell me your name." "what are you called?"]
+concept: (standup) ["stand up" "stand"]
+concept: (sitdown) ["sit down" "sit"]
+concept:(hello) ["wave" "please wave"] 
+
+u: (~name) my name is Nao.
+
+u: (~greetings) I'm doing good. How are you?
+
+u: (~Afeeling) That's nice to hear!
+
+u: (~FeelingBad) Why, what happened?
+
+u: (["like marvel"]) I do.
+
+u: (~MarvalC) Loki.
+
+u: (~standup {now}) ok $stand =1. 
+
+u: (~sitdown {now}) ok $sit =1.
+
+u: (~hello {now}) I'm waving $wave=1.
